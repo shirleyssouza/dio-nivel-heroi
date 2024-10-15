@@ -1,0 +1,42 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+   min-height: 100%;
+   background-image: url(fundo.avif);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+main {
+    height: 50vh;
+    width: 20vw;
+    padding: 60px;
+    border: 2px solid white;
+    margin: 13vh auto;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    color: white;
+}
+
+button {
+    padding: 4px;
+    width: 8vw;
+    border-radius: 10px;
+}
