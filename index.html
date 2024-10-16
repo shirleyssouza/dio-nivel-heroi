@@ -1,23 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css" />
-    <script src="index.js"></script>
-    <title>Nível do Herói</title>
-</head>
-<body>
-    <main>
-        <section>
-            <h1>Classificador de Nível do Herói</h1>
-            <label for="nome">Nome: <input type="text" id="nome" /></label>
-            <label for="xp">Nível: <input type="number" id="xp" value="0"></label>
-            <button onclick="calcularNivel()">Enviar</button>
-        </section>
-        <section>
-            <div id="resultado"></div>
-        </section>
-    </main>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <script src="index.js"></script>
+        <title>Nível do Herói</title>
+    </head>
+    <body>
+        <main>
+            <section class="section">
+                <article>
+                    <h1>Classificadora de Nível do Herói</h1>
+                    <label for="nome"
+                        >Nome: <input type="text" id="nome"
+                    /></label>
+                    <label for="xp"
+                        >Nível: <input type="number" id="xp" value="0"
+                    /></label>
+                    <button onclick="calcularNivel()">Calcular</button>
+                </article>
+                <article>
+                    <div id="resultado"></div>
+                </article>
+            </section>
+            <section class="section">
+                <article>
+                    <h1>Calculadora de Partidas Rankeadas</h1>
+                    <label for="vitorias"
+                        >Vitórias: <input type="number" id="vitorias" value="0"
+                    /></label>
+                    <label for="derrotas"
+                        >Derrotas: <input type="number" id="derrotas" value="0"
+                    /></label>
+                    <button onclick="rankearPartidas()">Calcular</button>
+                </article>
+                <article>
+                    <div id="ranking"></div>
+                </article>
+            </section>
+        </main>
+    </body>
 </html>
