@@ -5,7 +5,7 @@ html {
 }
 
 body {
-    min-height: 100%;
+    min-height: 100vh;
     background-image: url(fundo.avif);
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,4 +49,24 @@ button {
     padding: 4px;
     width: 8vw;
     border-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    
+    main {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 1px
+}
+
+.section {
+    width: 50vw;
+    margin: 8vh auto;
+}
+
+    button {
+    width: 20vw;
+}
+
 }
