@@ -53,3 +53,36 @@ function rankearPartidas() {
     const ranking = `<h2>O Herói tem saldo de ${saldoVitorias} vitórias e está no nível: ${nivelRanking}</h2>`;
     document.getElementById("ranking").innerHTML = ranking;
 }
+
+function tipoAtaque() {
+  const name = document.getElementById("name").value;
+  const age = document.getElementById("age").value;
+  const tipo = document.getElementById("heroi").value;
+
+    class Heroi {
+
+        constructor(name, age, tipo) {
+            this.name = name;
+            this.age = age;
+            this.tipo = tipo;
+
+            if (tipo === "mago") {
+                this.ataque = "magia";
+            } else if (tipo === "guerreiro") {
+                this.ataque = "espada";
+            } else if (tipo === "monge") {
+                this.ataque = "artes marciais";
+            } else if (tipo === "ninja") {
+                this.ataque = "shuriken";
+            }
+        }
+
+        atacar() {
+              return `O jogador ${this.name} de ${this.age} anos, usou o herói tipo ${this.tipo} e atacou usando ${this.ataque}.`
+        }
+    }
+
+    const jogador = new Heroi(name, age, tipo);
+
+    document.getElementById("jogador").innerHTML = `<h2>${jogador.atacar()}</h2>`;
+}
